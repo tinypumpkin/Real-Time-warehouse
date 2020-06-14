@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="gmall2020-common" />
+        <module name="gmall2020-mock-db" />
+        <module name="gmall2020-mock-log" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="gmall2020-common" target="1.8" />
+      <module name="gmall2020-mock" target="1.8" />
+      <module name="gmall2020-mock-db" target="1.8" />
+      <module name="gmall2020-mock-log" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="gmall2020-common" options="-parameters" />
+      <module name="gmall2020-mock-db" options="-parameters" />
+      <module name="gmall2020-mock-log" options="-parameters" />
+    </option>
+  </component>
+</project>
