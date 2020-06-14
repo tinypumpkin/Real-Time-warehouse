@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/gmall0105-logger/gmall0105-logger.iml" filepath="$PROJECT_DIR$/gmall0105-logger/gmall0105-logger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gmall0105-parent.iml" filepath="$PROJECT_DIR$/gmall0105-parent.iml" />
+    </modules>
+  </component>
+</project>
