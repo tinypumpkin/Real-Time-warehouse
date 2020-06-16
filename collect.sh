@@ -10,7 +10,7 @@ case $1 in
 	for i in hadoop100 hadoop101 hadoop102 
 	do
   echo "========$i 开启收集队列==============="
-  ssh $i "java -Xms32m -Xmx64m  -jar /$PROJECT/$APPNAME --server.port=$SERVER_PORT >/dev/null 2>&1  &"
+  ssh $i "java -Xms32m -Xmx64m  -jar /$PROJECT/$APPNAME --server.port=$SERVER_PORT"
 	done
 };;
 "stop"){
