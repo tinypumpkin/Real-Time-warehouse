@@ -21,5 +21,5 @@ case $1 in
      ssh $i "ps -ef|grep $APPNAME |grep -v grep|awk '{print \$2}'|xargs kill" >/dev/null 2>&1
     done
   };;
-   esac
+esac
  
