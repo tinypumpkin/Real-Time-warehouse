@@ -73,6 +73,14 @@ password=maxwell
 <!-- 客户端唯一标识 -->
 client_id=maxwell_1
 ```
++ 指定分区--把数据分散到kafka的不同分区
+```bash
+vim config.properties
+```
+```properties
+#主键分区/随机数分区/指定字段分区
+producer_partition_by=primary_key/random/column
+```
 + 修改或插入mysql数据，并消费kafka进行观察
 ```bash
 bin/kafka-topics.sh --create --topic tp1 --zookeeper hadoop100:2181,hadoop101:2181,hadoop102:2181 --partitions 12 --replication-factor 1
