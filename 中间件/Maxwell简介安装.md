@@ -83,7 +83,14 @@ producer_partition_by=primary_key/random/column
 ```
 + 修改或插入mysql数据，并消费kafka进行观察
 ```bash
-bin/kafka-topics.sh --create --topic tp1 --zookeeper hadoop100:2181,hadoop101:2181,hadoop102:2181 --partitions 12 --replication-factor 1
+bin/kafka-console-consumer.sh --bootstrap-server hadoop100:9092 --topic tp1
+```
++ 启动maxwell
+```bash
+#config为使用的配置文件，daemon是使用守护进程
+./maxwell --config=/opt/module/maxwell/bin/config.properites --daemon
+#使用的daemon后可在logs目录下看到数据的信息。
+tail -f /opt/module/maxwell/logs/MaxwellDaemon.out
 ```
 + 执行测试语句
 ```sql
